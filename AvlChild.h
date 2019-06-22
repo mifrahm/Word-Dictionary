@@ -9,12 +9,6 @@
 #include<iostream>
 #include<map>
 
-bool operator<(const DATA &a, const DATA &b)
-{
-    return a.frequency < b.frequency;
-}
-
-
 class AvlChild: public AvlTree<DATA,string> {
 
 private:
