@@ -244,13 +244,9 @@ int main() {
 
                 DATA data;
 
-                if (!tree.AVL_Retrieve(word, data)){ //if node does not exist
-                    newItem.key = word;
-                    newItem.frequency = freq;
-                    tree.AVL_Insert(newItem);
-                } else {
-                    tree.AVL_Update(data);
-                }
+                newItem.key = word;
+                newItem.frequency = freq;
+                tree.AVL_Insert(newItem);
 
                 i++;
             }
