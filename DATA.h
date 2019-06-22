@@ -20,6 +20,10 @@ struct DATA
     DATA(){
         count++;
     }
+    
+    bool operator<(const DATA &a)const {
+        return frequency < a.frequency;
+    }
 };
 
 int DATA::count = 0;
